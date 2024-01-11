@@ -13,7 +13,7 @@ resource "aws_lb" "alb" {
 #Listener
 
 resource "aws_lb_listener" "listener" {
-  load_balancer_arn = aws_lb.front_end.arn
+  load_balancer_arn = aws_lb.alb.arn
   port              = "80"
   protocol          = "HTTP"
 
